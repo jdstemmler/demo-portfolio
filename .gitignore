@@ -2,6 +2,8 @@
 .DS_Store
 *.pkl
 *.joblib
+secrets.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
