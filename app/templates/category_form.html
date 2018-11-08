@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+{% block main %}
+<h1 class="mt-5">Are You a Candidate or Political Committee?</h1>
+<div class="container">
+<form action="/result" method="POST">
+  {% for code in codes %}
+  <div class="form-group row">
+    <label for="{{ code }}" class="col-sm-6 col-form-label col-form-label-sm text-right">{{ code }}</label>
+    <div class="col-sm-2">
+        <input type="text" class="form-control form-control-sm" id="{{ code }}" name="{{ code }}" placeholder="Amount">
+    </div>
+  </div>
+  {% endfor %}
+  <button type="submit" class="btn btn-primary">Submit</button>
+  {% endblock %}

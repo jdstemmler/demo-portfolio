@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+
+{% block main %}
+<div class="row">
+  <div class="col-sm-4">
+  {{ input|safe }}
+  </div>
+  <div class="col-sm-8">
+    <h1 class="mt-5">The forecast predicts that you are a: {{ pred }}</h1>
+  </div>
+</div>
+{% endblock %}
